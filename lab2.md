@@ -23,6 +23,9 @@ create table orders (
 	check (status in ('active', 'inactive', 'pending'))
 );
 
+create index idx_user_email on users (email);
+create index idx_order_date on orders (order_date);
+
 insert into users (name, email, phone, registration_date) values
 ('Saul', 'drivesdale6@microsoft.com', '+420 399 103 2083', '2024-05-02 13:50:21'),
 ('Nikolia', 'nstate9@psu.edu', '+63 639 139 2267', '2024-06-09 17:55:32'),
