@@ -5,7 +5,7 @@ create table users (
 	name varchar(30) not null,
 	email varchar(255) unique,
 	phone varchar(20) unique,
-	registration_date timestamp default now(),
+	registration_date timestamp default now() not null,
 	check (char_length(name) > 0),
 	check (email ~* '.+@.+\..+'),
 	check (phone ~ '^(\+)?((\d{2,3}) ?\d|\d)(([ -]?\d)|( ?(\d{2,3}) ?)){5,12}\d$'),
