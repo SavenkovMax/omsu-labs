@@ -64,6 +64,7 @@
 6. {id_supply, id_wine} -> {quantity, purchase_price}
 7. id_sommelier -> {surname_sommelier, name_sommelier, patronymic_sommelier, id_restaurant}
 
+
 1. A1 -> {A2, A3, A4, A5, A6, A7, A8}
 2. A9 -> {A10, A11, A12}
 3. A14 -> {A21, A22, A23}
